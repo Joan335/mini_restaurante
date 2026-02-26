@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #faf6f0;
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.nombre-restaurante {
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+    background-color: #b85c38;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-size: 35px;
+    color: #ddd;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.card-img-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.producto-card img{
+    width: 100%;
+    height: 450px;
+    transition: transform 0.4s ease;
+}
+
+.producto-card:hover img {
+    transform: scale(1.07);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 65%;
+    margin: 0 auto;
+    gap: 10vh 20vh;
+    padding-top: 10vh;
+}
+
+.producto-card {
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-add {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: #b85c38;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.btn-add:hover {
+    background: #8e4427;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add:active {
+    transform: scale(0.95);
+}
+
+.card-content {
+    padding: 0.2vh 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+.descripcion {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio {
+    font-size: 20px;
+    background-color: #E0E0E0;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
