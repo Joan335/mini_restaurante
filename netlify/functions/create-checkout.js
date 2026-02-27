@@ -7,6 +7,7 @@ exports.handler = async (event) => {
 
     try {
         const { priceId } = JSON.parse(event.body);
+        console.log("Cuerpo recibido:", body);
 
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
