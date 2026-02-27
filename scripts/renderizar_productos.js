@@ -71,7 +71,6 @@ function renderizarProductos(lista) {
                 <p class="descripcion">${producto.descripcion}</p>
                 <button class="btn-add" data-id="${producto.id}" data-price="${producto.idPrice}">&#128179; &nbsp; Comprar</button>
             </div>
-        
         `;
 
         contenedor.appendChild(card);
