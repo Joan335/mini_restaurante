@@ -13,7 +13,7 @@ const productos = [
         precio: 14.50,
         descripcion: "Masa artesanal con salsa de tomate San Marzano, mozzarella fresca y albahaca del huerto.",
         imagen: "images/pizza.jpg",
-        idPrice: "prod_U2yvDdQcJSriIG"
+        idPrice: "price_1T5YbTPwsLLwpwSK9tu7qQxa"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const productos = [
         precio: 10.99,
         descripcion: "Pollo a la parrilla sobre una cama de lechuga romana, crutones dorados, parmesano y aderezo caesar.",
         imagen: "images/caesar.jpg",
-        idPrice: "prod_U2yvDdQcJSriIG"
+        idPrice: "price_1T5YcQPwsLLwpwSKOX9PaSBk"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const productos = [
         precio: 13.50,
         descripcion: "Spaghetti al dente con nuestra salsa bolognesa casera de carne, tomate y hierbas finas.",
         imagen: "images/bolognesa.jpg",
-        idPrice: "prod_U2yvDdQcJSriIG"
+        idPrice: "price_1T5YdvPwsLLwpwSKOnkwdaIo"
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const productos = [
         precio: 18.99,
         descripcion: "Filete de salmon fresco con esparragos, limon y hierbas mediterraneas. Servido con arroz al vapor.",
         imagen: "images/salmon.jpg",
-        idPrice: "prod_U2yvDdQcJSriIG"
+        idPrice: "price_1T5YeuPwsLLwpwSKNyr4NX2F"
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const productos = [
         precio: 11.50,
         descripcion: "Tres tacos de cerdo marinado con pina, cilantro, cebolla y salsa verde en tortilla de maiz.",
         imagen: "images/tacos.jpg",
-        idPrice: "prod_U2yvDdQcJSriIG"
+        idPrice: "price_1T5YfoPwsLLwpwSKizOJ9ODk"
     },
 ];
 

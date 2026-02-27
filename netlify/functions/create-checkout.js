@@ -5,8 +5,6 @@ exports.handler = async (event) => {
         return { statusCode: 405, body: "Method not allowed" };
     }
 
-
-
     try {
         const { priceId } = JSON.parse(event.body);
         console.log("Cuerpo recibido:", event.body);
