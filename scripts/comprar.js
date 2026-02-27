@@ -7,7 +7,7 @@ d.addEventListener("click", async (e) => {
         btn.textContent = "Cargando...";
 
         try {
-            const response = await fetch('../netlify/functions/create-checkout', {
+            const response = await fetch('/.netlify/functions/create-checkout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
