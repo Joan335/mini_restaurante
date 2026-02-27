@@ -5,7 +5,7 @@ const productos = [
         precio: 12.99,
         descripcion: "Carne de res a la parrilla, queso cheddar fundido, lechuga fresca, tomate y nuestra salsa especial en pan brioche.",
         imagen: "images/hamburguesa.jpg", 
-        idPrice: "prod_U2yvDdQcJSriIG"
+        idPrice: "price_1T4sy6PwsLLwpwSKwwrkXnsd"
     },
     {
         id: 2,
