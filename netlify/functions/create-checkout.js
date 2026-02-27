@@ -22,7 +22,7 @@ exports.handler = async (event) => {
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ url: session.url }),
+            body: JSON.stringify({ url: "https://saborymesa.netlify.app/" }),
         };
     } catch (error) {
         return {
