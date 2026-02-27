@@ -16,8 +16,8 @@ exports.handler = async (event) => {
                 quantity: 1
             }],
             mode: 'payment',
-            success_url: `${process.env.URL_SITE}/success.html`,
-            cancel_url: `${process.env.URL_SITE}/index.html`,
+            success_url: `${"https://saborymesa.netlify.app/"}/success.html`,
+            cancel_url: `${"https://saborymesa.netlify.app/"}/index.html`,
         });
 
         return {
