@@ -6,12 +6,12 @@ exports.handler = async (event) => {
     }
 
     try {
-        const { priceID } = JSON.parse(event.body);
+        const { priceId } = JSON.parse(event.body);
 
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items: [{
-                price: priceID,
+                price: priceId,
                 quantity: 1
             }],
             mode: 'payment',
