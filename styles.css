@@ -24,7 +24,8 @@ body {
     background-color: #b85c38;
 }
 
-h1, h3 {
+h1,
+h3 {
     margin: 0;
     padding: 5px;
     font-family: 'Playfair Display', serif;
@@ -41,13 +42,15 @@ h1 {
 
 .card-img-container {
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
+    aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
-.producto-card img{
+.producto-card img {
     width: 100%;
-    height: 450px;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.4s ease;
 }
 
@@ -106,7 +109,6 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    
 }
 
 .descripcion {
@@ -115,7 +117,6 @@ h1 {
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.2px;
-    
 }
 
 .card-header {
@@ -131,4 +132,71 @@ h1 {
     padding: 5px;
     border: 1px solid #fff;
     border-radius: 8px;
+}
+
+/* --- Media Queries para Responsividad --- */
+
+/* Tablets y pantallas medianas (menos de 1024px) */
+@media (max-width: 1450px) {
+    .products {
+        width: 90%;
+        gap: 5vh;
+    }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 768px) {
+    .nombre-restaurante h1 {
+        font-size: 35px;
+        /* Título más pequeño para que no se corte */
+    }
+
+    .nombre-restaurante h3 {
+        font-size: 24px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+        width: 90%;
+        /* Ocupa casi todo el ancho */
+        padding-top: 5vh;
+    }
+
+    .card-img-container,
+    .producto-card img {
+        aspect-ratio: 16 / 9;
+        /* Imágenes menos altas en móvil */
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .card-content h2 {
+        font-size: 22px;
+    }
+
+    .btn-add {
+        padding: 8px 15px;
+        /* Reducimos el grosor vertical */
+        font-size: 20px;
+        /* Texto un poco más pequeño */
+        margin-top: 10px;
+        /* Separación controlada */
+        border-radius: 12px;
+        /* Curva más sutil para botones pequeños */
+        min-height: 40px;
+        /* Altura mínima para que sea fácil de tocar */
+    }
+
+    /* Si el icono del teclado/tarjeta es muy grande */
+    /* .btn-add span {
+        font-size: 40px;
+    } */
 }
